@@ -87,19 +87,17 @@ ul li {
 }
 
 .user-info img {
-  height: 56px;
-  width: auto;
-}
-
-.centerb {
-  display: grid;
-  place-items: center;
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+  cursor: pointer;
 }
 
 figure {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 7px 0;
 }
 
 /*---------------------------------------------------------------*/

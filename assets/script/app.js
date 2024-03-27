@@ -10,15 +10,10 @@ function select(selector) {
 }
 
 const fileDetail = select('.file-detail');
-// const postImage  = select('.post-image');
-const postImage = document.getElementById('file-input');
+const postImage  = select('.post-image');
+const profileImg = select('.profile');
 
-postImage.addEventListener('change', function() {
+listen('change', postImage, () => {
   let fileName = postImage.files[0].name;
   fileDetail.textContent = fileName;
 });
-
-// listen('change', postImage, () => {
-//   let fileName = this.files[0].name;
-//   fileDetail.textContent = fileName;
-// });
