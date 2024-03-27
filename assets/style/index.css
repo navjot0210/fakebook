@@ -66,17 +66,32 @@ p, li {
 }
 
 h1 {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
   color: rgb(64, 128, 238);
 }
 
-.logo {
-  width: 16%;
+.logo, .user-info {
+  width: 15.2%;
 }
 
 .options {
-  width: 80%;
-  /* align-items: center;
-  justify-content: center; */
+  width: 69.6%;
+}
+
+nav ul li a {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: rgb(64, 128, 238);
 }
 
 ul li {
@@ -84,10 +99,33 @@ ul li {
   justify-content: center;
 }
 
-/* .user-info {
-  align-items: flex-end;
-} */
 .user-info img {
   height: 56px;
   width: auto;
+}
+
+.centerb {
+  display: grid;
+  place-items: center;
+}
+
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*---------------------------------------------------------------*/
+/*-------------------Posts --------------------------------------*/
+/*---------------------------------------------------------------*/
+main {
+  display: grid;
+  place-items: center;
+}
+
+.input-text {
+  margin-top: 15px;
+  height: 200px;
+  width: 500px;
+  background-color: var(--secondary-background-color);
 }
