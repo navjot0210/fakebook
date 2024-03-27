@@ -24,13 +24,7 @@ body {
   display: flex;
 }
 
-/* .row {
-  display: flex;
-  justify-content: space-between;
-} */
-
 .center {
-  /* display: grid; */
   align-items: center;
   justify-content: center;
 }
@@ -38,14 +32,6 @@ body {
 .gap-15 {
   gap: 15px;
 }
-
-/* .gap-30 {
-  gap: 30px;
-}
-
-.gap-40 {
-  gap: 40px;
-} */
 
 .space-between {
   justify-content: space-between;
