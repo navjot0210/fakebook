@@ -130,7 +130,7 @@ input[type="file"], input[type="button"] {
   color: #fff;
 }
 
-input[type=button] {
+input[type=button], .close {
   height: 35px;
   width: 62px;
   border-radius: 4px;
@@ -139,7 +139,7 @@ input[type=button] {
   transition: all 0.25s ease-in-out;
 }
 
-input[type=button]:hover {
+input[type=button]:hover, .close:hover {
   background-color: rgb(38, 117, 253);
 
 }
@@ -199,4 +199,61 @@ i {
 .post-header p {
   color: #000;
   line-height: 45px;
+}
+/*---------------------------------------------------------------*/
+/*-------------------Modal --------------------------------------*/
+/*---------------------------------------------------------------*/
+.modal {
+  position: relative;
+  top: -212px;
+  right: -420px;
+}
+
+.subscriber-info {
+  display: grid;
+  place-items: center;
+  width: 250px;
+  padding: 20px;
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.user-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.subscriber-info h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 10px 0 0;
+  color: #fff;
+}
+
+.subscriber-info .username {
+  margin: 0 0 15px;
+  font-size: 15px;
+  color: rgb(161 164 178);
+}
+
+.subscriber-info i {
+  padding-right: 7px;
+  width: 20px;
+  font-size: 14px;
+}
+
+.subscriber-info .pages i {
+  font-size: 16px;
+}
+
+.subscriber-info .groups i {
+  font-size: 12px;
+}
+
+.close {
+  margin-top: 12px;
+  color: #fff;
 }
