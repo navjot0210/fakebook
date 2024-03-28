@@ -169,6 +169,7 @@ i {
 
 .display-post {
   width: 500px;
+  transform: rotateX(180deg);
 }
 
 .the-post.data {
@@ -176,6 +177,7 @@ i {
   background-color: #fff;
   border-radius: 4px;
   margin: 20px 0;
+  transform: rotateX(180deg);
 }
 
 .the-post p {

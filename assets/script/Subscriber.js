@@ -45,8 +45,3 @@ class Subscriber extends User {
 }
 
 export default Subscriber;
-/*
-const subscriber = new Subscriber (9787, 'Joseph', 'email@email.com', 'Andre Fans', 'Soft Dev', true);
-
-console.log(subscriber.getInfo());
-*/
