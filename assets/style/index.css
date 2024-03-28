@@ -2,7 +2,7 @@
 
 :root {
   --primary-background-color: rgb(23 24 32);
-  --secondary-background-color: rgba(59, 60, 69, 0.35);
+  --secondary-background-color: rgb(59 60 69 / 0.35);
 }
 
 .container {
@@ -206,19 +206,56 @@ i {
 /*-------------------Modal --------------------------------------*/
 /*---------------------------------------------------------------*/
 .modal {
-  position: relative;
-  top: -212px;
-  right: -420px;
+  width: 280px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  cursor: default;
+  overflow: hidden;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+  -webkit-transform: translate(-50%, -52%);
+      -moz-transform: translate(-50%, -52%);
+          transform: translate(-50%, -52%);
+}
+
+.modal.isvisible {
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 5555;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgb(16 18 20 / 0.55);
+  cursor: pointer
+}
+
+.overlay.isvisible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .subscriber-info {
   display: grid;
   place-items: center;
-  width: 250px;
+  width: 280px;
   padding: 20px;
-  background-color: var(--secondary-background-color);
+  background-color: #24252d;
   border-radius: 4px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.25);
   overflow: hidden;
 }
 
@@ -256,6 +293,6 @@ i {
 }
 
 .close {
-  margin-top: 12px;
+  margin-top: 15px;
   color: #fff;
 }
