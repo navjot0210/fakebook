@@ -167,7 +167,39 @@ i {
   color: #fff;
 }
 
+.display-post {
+  width: 500px;
+}
 
+.the-post.data {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.the-post p {
+  color: #000;
+}
+
+.post-header{
+  height: 45px;
+}
+
+.post-header img{
+  border-radius: 50%;
+  height: 42px;
+  width: 42px;
+}
+
+.post-header h3 {
+  line-height: 45px;
+}
+
+.post-header p {
+  color: #000;
+  line-height: 45px;
+}
 /*---------------------------------------------------------------*/
 /*-------------------Modal --------------------------------------*/
 /*---------------------------------------------------------------*/
