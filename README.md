@@ -115,4 +115,4 @@ A basic form including a text-area and option to select images to be posted.
 Worked with [Joseph Adoga](https://github.com/josephadoga) on this interesting project.
 
 ## Demo
-Click [here]() to test the application.
+Click [here]( https://navjot0210.github.io/fakebook/) to test the application.
