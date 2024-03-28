@@ -33,8 +33,11 @@ function makePost() {
   let imageSrc;
 
   (postImage.files[0]) ? imageSrc = 
-  `${URL.createObjectURL(postImage.files[0])}` 
-  : imageSrc = '';
+  `
+  <figure>
+    <img src="${URL.createObjectURL(postImage.files[0])}" class="posted-image">
+  </figure>
+  `: imageSrc = '';
 
   const newPost = document.createElement('div');
   postSection.appendChild(newPost);
@@ -50,9 +53,7 @@ function makePost() {
     <p>${now.toDateString().split(' ').slice(1).join(' ')}</p>
   </header>
   <p>${textArea.value}</p>
-  <figure>
-    <img src="${imageSrc}" class="posted-image">
-  </figure>
+  ${imageSrc}
   `
 }
 
